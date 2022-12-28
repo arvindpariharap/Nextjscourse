@@ -29,7 +29,8 @@ export default function Home() {
         <div>
         <h1 className={styles.title}>Hunting Coder</h1>
         <div className={styles.Imagerape}>
-        <Image className={styles.myimg} src="/homeimg.avif" width={237} height={158}/>
+        {/* <Image className={styles.myimg} src="/homeimg.avif" width={237} height={158} alt={'hunting coder'}/> */}
+        <img className={styles.myimg} src="/homeimg.avif" width={237} height={158} alt="hunting coder"/>
         </div>
         <p className={styles.description}>
           A blog for hunting coders by a hunting coder.

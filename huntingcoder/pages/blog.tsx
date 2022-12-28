@@ -13,7 +13,7 @@ const Blog = (props: { allBlogs: any; }) => {
       return <div key={blogitem.slug}>
       <Link href={`/blogpost/${blogitem.slug}`}>
       <h3 className='blogItemh3'>{blogitem.title}</h3></Link>
-      <p className={styles.blogItemp}>{blogitem.content.substr(0,140)}</p>
+      <p className={styles.blogItemp}>{blogitem.metadesc.substr(0,140)}</p>
       </div>
     })}
     </main>

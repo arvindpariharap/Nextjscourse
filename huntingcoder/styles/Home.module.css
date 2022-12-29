@@ -323,5 +323,12 @@
   max-width: 157px;
 }
 .blogbtn{
-  margin: 15px 0px;
+  color: white;
+  background: black;
+  padding: 7px 6px;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 12px;
+  margin: 22px 0;
 }
+

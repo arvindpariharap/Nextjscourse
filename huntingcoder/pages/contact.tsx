@@ -59,33 +59,38 @@ const Contact = () => {
     console.log(e,"Change")
   }
   return<div className={styles.container}>
-      <h1>Contact Us</h1>
+      <h1 className={styles.contacth1}>Contact Us</h1>
       <form onSubmit={handleSubmit}>
       <div className={styles.mb3}>
         <label for="exampleInputName1" className={styles.formlabel}>Name</label>
-        <input type="name" class="form-control" name='name' value = {name} onChange={handleChange} id="exampleInputname1" aria-describedby="nameHelp" placeholder="Enter Your Name"/>
+        <input className={styles.input} type="name" 
+         name='name' value = {name} onChange={handleChange} id="exampleInputname1" aria-describedby="nameHelp" placeholder="Enter Your Name"/>
   
       </div>
       <div className={styles.mb3}>
         <label for="exampleInputphone1" className={styles.formlabel}>Phone</label>
-        <input type="text" class="form-control" name='phone' value = {phone} onChange={handleChange} id="exampleInputPhone1" aria-describedby="phoneHelp" placeholder="Enter Phone Number"/>
+        <input className={styles.input} type="text" 
+         name='phone' value = {phone} onChange={handleChange} id="exampleInputPhone1" aria-describedby="phoneHelp" placeholder="Enter Phone Number"/>
         
       </div>
   
       <div className={styles.mb3}>
         <label for="exampleInputEmail1"className={styles.formlabel}>Email address</label>
-        <input type="email" class="form-control"  name='email' value = {email} onChange={handleChange} id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"/>
+        <input className={styles.input} type="email" 
+          name='email' value = {email} onChange={handleChange} id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"/>
         
       </div>
       <div className={styles.mb3}>
         <label for="exampleInputPassword1" className={styles.formlabel}>Password</label>
-        <input type="password" class="form-control" name='password' id="exampleInputPassword1" placeholder="Password"/>
+        <input className={styles.input} type="password" 
+         name='password' id="exampleInputPassword1" placeholder="Password"/>
       </div>
       <div className={styles.mb3}>
         <label for="exampleInputdesc1" className={styles.formlabel}>Description</label>
-        <textarea type="s=desc" class="form-control" name='desc' value = {desc} onChange={handleChange} id="exampleInputDesc1" aria-describedby="descHelp" placeholder="Description"></textarea>
+        <textarea className={styles.input} type="s=desc" 
+         name='desc' value = {desc} onChange={handleChange} id="exampleInputDesc1" aria-describedby="descHelp" placeholder="Description"></textarea>
       </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
+      <button type="submit" class={styles.btn}>Submit</button>
     </form>
     </div>;
 }

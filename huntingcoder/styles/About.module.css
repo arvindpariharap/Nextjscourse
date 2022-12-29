@@ -1,4 +1,23 @@
 .container{
     max-width: 45VW;
     margin: auto;
+    
   }
+
+.abouth1{
+    margin: 25px 0px;
+    justify-content: center;
+    text-align: center;
+}
+
+.abouth2{
+    margin: 15px 0px;
+}
+
+.aboutp{
+    padding: 10px 0px;
+}
+
+.aboutp1{
+    padding: 10px 30px;
+}

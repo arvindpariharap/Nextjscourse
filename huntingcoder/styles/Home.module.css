@@ -293,5 +293,35 @@
 }
 
 .Imagerape{
-  padding: 30px 0px
+  padding: 30px 0px;
+  text-align: center;
+}
+
+.container{
+  max-width: 60VW;
+  margin: auto;
+  
+}
+
+.title{
+  justify-content: center;
+  text-align: center;
+  font-size: 1.5rem;
+
+}
+
+.latestsblog{
+  font-size: 2.5rem;
+  padding: 20px 0px;
+}
+
+.blogh3{
+  padding: 10px 0px;
+}
+.myimg{
+  border-radius: 92px;
+  max-width: 157px;
+}
+.blogbtn{
+  margin: 15px 0px;
 }

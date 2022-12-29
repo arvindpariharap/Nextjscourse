@@ -2,6 +2,7 @@ import React, {useState, useEffect } from 'react'
 import {useRouter} from 'next/router'
 import styles from '../../styles/BlogPost.module.css'
 import * as fs from 'fs';
+import { promises } from 'stream';
 
 const Slug = (props: { myBlog: any; }) => {
   function createMarkup(c: any) {
@@ -18,12 +19,19 @@ const Slug = (props: { myBlog: any; }) => {
 };
 
 export async function getStaticPaths() {
+let allb = await fs.promises.readdir(`blogdata`)
+allb = allb.map((item) =>{
+return { params: {slug: item.split(".")[0]}}
+console.log(allb)
+})
   return {
-    paths: [
-      { params: {slug: "how-to-learn-flask"} },
-      { params: {slug: "how-to-learn-javascript"} },
-      { params: {slug: "how-to-learn-nextjs"} },
-    ],
+    paths: allb,
+    // [
+    //   { params: {slug: "how-to-learn-flask"} },
+    //   { params: {slug: "how-to-learn-javascript"} },
+    //   { params: {slug: "how-to-learn-nextjs"} },
+      
+    // ],
     fallback: false, // can also be true or 'blocking'
   }
 }

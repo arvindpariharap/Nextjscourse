@@ -1,8 +1,8 @@
-import Head from 'next/head'
-import { Inter } from '@next/font/google'
-import styles from '../styles/Home.module.css'
-import Link from 'next/link'
-const inter = Inter({ subsets: ['latin'] })
+import Head from "next/head";
+import { Inter } from "@next/font/google";
+import styles from "../styles/Home.module.css";
+import Link from "next/link";
+const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
@@ -16,19 +16,27 @@ export default function Home() {
 
       <main className={styles.main}>
         <div>
-        <div className={styles.Imagerape}>
-        {/* <Image className={styles.myimg} src="/homeimg.avif" width={237} height={158} alt={'hunting coder'}/> */}
-        <img className={styles.myimg} src="/homeimg.avif" width={237} height={158} alt="hunting coder"/>
-        </div>
-        <h1 className={styles.title}>&lt;HuntingCoder/&gt;</h1>
-
- 
+          <div className={styles.Imagerape}>
+            {/* <Image className={styles.myimg} src="/homeimg.avif" width={237} height={158} alt={'hunting coder'}/> */}
+            <img
+              className={styles.myimg}
+              src="/homeimg.avif"
+              width={237}
+              height={158}
+              alt="hunting coder"
+            />
+          </div>
+          <h1 className={styles.title}>&lt;HuntingCoder/&gt;</h1>
         </div>
         <div className="blogs">
           <h2 className={styles.latestsblog}>Latests Blogs</h2>
           <div className="blogItem">
             <h3 className={styles.blogh3}>How to learn javascript in 2022?</h3>
-            <p>JavaScript is the language use to design for web Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur vitae tempore perspiciatis.</p>
+            <p>
+              JavaScript is the language use to design for web Lorem ipsum
+              dolor, sit amet consectetur adipisicing elit. Pariatur vitae
+              tempore perspiciatis.
+            </p>
             <button className={styles.blogbtn}>Read More</button>
           </div>
           <div className="blogItem">
@@ -43,9 +51,7 @@ export default function Home() {
           </div>
         </div>
       </main>
-      <div className={styles.footer}>
-
-      </div>
-      </div>
-  )
+      <div className={styles.footer}></div>
+    </div>
+  );
 }

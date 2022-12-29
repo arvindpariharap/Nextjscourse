@@ -12,5 +12,16 @@
   padding: 0;
 }
   .blogItemp{
-    max-width: 45vw;
+    max-width: 60vw;
   }
+
+  .blogbtn{
+    color: white;
+    background: black;
+    padding: 7px 6px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 12px;
+    margin: 22px 0;
+}
+
